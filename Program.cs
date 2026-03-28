@@ -14,5 +14,15 @@ class Program
         Console.WriteLine("Kode paket Student: " + kp.GetKodePaket("Student"));
         Console.WriteLine();
 
+        MesinKopi mesin = new MesinKopi();
+
+        mesin.PowerOn();
+        mesin.StartBrew();
+        mesin.FinishBrew();
+        mesin.StartMaintenance();
+        mesin.FinishMaintenance();
+        mesin.PowerOff();
+
+        mesin.StartBrew();
     }
 }
